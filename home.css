@@ -3,7 +3,6 @@
 /* Padding below the footer and lighter body text */
 
 body {
-  padding-bottom: 40px;
   color: white;
 }
 
@@ -20,7 +19,12 @@ header {
 .navbar a {
 	color: white;
 }
-
+.navbar a:hover {
+	color: #e36d1b;
+}
+.navbar a:active {
+  color:#e36d1b;
+}
 .dropbtn {
     background-color: #002533;
     color: white;
@@ -54,7 +58,7 @@ header {
 
 .dropdown:hover .dropdown-content {display: block;}
 
-.dropdown:hover .dropbtn {background-color: #e36d1b;}
+.dropdown:hover .dropbtn {background-color: #496161;}
 /* CUSTOMIZE THE NAVBAR
 -------------------------------------------------- */
 
@@ -65,12 +69,11 @@ header {
   height: 500px;
   margin-bottom: 60px;
 }
-/* Since positioning the image, we need to help out the caption */
 .carousel-caption {
   z-index: 10;
+  text-shadow: 2px 2px #000000;
 }
 
-/* Declare heights because of positioning of img element */
 .carousel .item {
   height: 500px;
   background-color: #777;
@@ -90,12 +93,11 @@ header {
 	background-color: #e36d1b;
 }
 
-/* MARKETING CONTENT
--------------------------------------------------- */
+/* marketing content */
 
-/* Center align the text within the three columns below the carousel */
 .marketing .col-lg-4 {
   margin-bottom: 20px;
+  margin-top: 5px;
   text-align: center;
   color: black;
 }
@@ -106,7 +108,12 @@ header {
   margin-right: 10px;
   margin-left: 10px;
 }
-
+ div.container.marketing {
+	 margin-top: 40px;
+ }
+ div.container.marketing {
+	 margin-bottom: 10px;
+ }
 
 /* Featurettes
 ------------------------- */

@@ -1,0 +1,49 @@
+/*ticker*/
+ 
+ @keyframes ticker {
+    0% { transform: translate3d(0, 0, 0); }
+    100% { transform: translate3d(-100%, 0, 0); }
+  }
+  .tcontainer{
+	margin-top: 100px;
+    width: 100%;
+    overflow: hidden;
+	background-color: #002533;
+  }
+  .ticker-wrap {
+    width: 100%;
+    padding-left: 100%;
+    background-color: #e36d1b;
+  }
+  .ticker-move {
+    display: inline-block;
+    white-space: nowrap;
+    padding-right: 100%;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-name: ticker;
+    animation-duration: 10s;
+  }
+  .ticker-move:hover{
+    animation-play-state: paused;
+  }
+  div.ticker-item{
+	font-family:courier new;
+	color: #002533;
+	font-size: 36px;
+    display: inline-block;
+    padding: 0 2rem;
+	z-index: 10;
+	
+  }
+
+
+ .UpInfo {
+	 position: relative;
+	 display: block;
+	 color:black;
+	 font-size: 14px;
+	 padding-top: 60px;
+	 padding-left: 40px;
+	 padding-right: 40px;
+ }
